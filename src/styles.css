@@ -107,3 +107,35 @@ main section.hero-section {
   font-size: 8rem;
   color: var(--light-color);
 }
+
+.hero-slogan span.container {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  height: 1.2em; /* Adjust height to fit text */
+  background-color: var(--primary-color-two);
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+span.container #animated-text {
+  animation: slideUp 2s infinite;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
