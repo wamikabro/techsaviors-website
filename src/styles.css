@@ -90,30 +90,3 @@ nav .nav-list li a {
   color: var(--light-color); /* Text color */
   text-decoration: none; /* Remove underline */
 }
-
-@keyframes colorChange {
-  0% {
-    color: white; /* Start with white */
-  }
-  16% {
-    color: #3498db; /* Soft blue */
-  }
-  33% {
-    color: #2ecc71; /* Soft green */
-  }
-  50% {
-    color: #e74c3c; /* Soft red */
-  }
-  66% {
-    color: #f1c40f; /* Soft yellow */
-  }
-  83% {
-    color: #e67e22; /* Soft orange */
-  }
-  100% {
-    color: white; /* Loop back to white */
-  }
-}
-nav ul li a:hover {
-  animation: colorChange 3s infinite; /* Animation loop on hover */
-}
