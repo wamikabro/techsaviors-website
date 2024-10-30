@@ -1,15 +1,11 @@
 const navLinks = document.querySelectorAll(".nav-list li");
 
-console.log(navLinks);
-
 navLinks.forEach((link) => {
   link.addEventListener("mouseenter", () => {
-    // Add the animation classes
     link.classList.add("animate__animated", "animate__swing");
   });
 
   link.addEventListener("animationend", () => {
-    // Remove the animation classes
     link.classList.remove("animate__animated", "animate__swing");
   });
 });
@@ -18,13 +14,18 @@ navLinks.forEach((link) => {
 const textOptions = ["Web Design", "Development", "Video Editing", "Marketing"];
 let currentIndex = 0;
 
-// Reference to the animated text element
+// Reference to the animated text element and container
 const animatedText = document.getElementById("animated-text");
+const container = animatedText.parentElement;
 
 // Function to update text and reset animation
 function updateText() {
   // Update the text content
   animatedText.textContent = textOptions[currentIndex];
+
+  // Measure the new width and update container width
+  const newWidth = animatedText.offsetWidth + 20 + "px";
+  container.style.width = newWidth; // Set the width based on the new text
 
   // Restart animation
   animatedText.style.animation = "none";

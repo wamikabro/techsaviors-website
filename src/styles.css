@@ -114,13 +114,18 @@ main section.hero-section {
   overflow: hidden;
   height: 1.2em; /* Adjust height to fit text */
   background-color: var(--primary-color-two);
-  padding-bottom: 15px;
+  padding: 0 0 15px 10px;
   align-items: center;
+  transition: width 0.5s ease; /* Smooth transition for width changes */
+  white-space: nowrap; /* Prevent line breaks for longer text */
+  width: auto; /* Allow width to change dynamically */
+  border-radius: 1rem;
 }
 
 span.container #animated-text {
   animation: slideUp 2s infinite;
 }
+
 @keyframes slideUp {
   0% {
     transform: translateY(100%);
