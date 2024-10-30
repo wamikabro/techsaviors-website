@@ -27,11 +27,53 @@ header nav {
   margin: 1rem 0;
   background-color: var(--dark-color);
   width: 50%;
+  border: solid 1px white;
   border-radius: 50px;
   height: 100%;
   display: flex;
   align-items: center;
   padding: 0 2rem;
+  /* Start animation for border-radius */
+  animation: cornerChange 4s infinite; /* Adjust duration as needed */
+}
+
+@keyframes cornerChange {
+  0% {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px; /* All corners rounded */
+  }
+  20% {
+    border-top-left-radius: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px; /* Top left square */
+  }
+  40% {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px; /* Top right square */
+  }
+  60% {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 50px; /* Bottom right square */
+  }
+  80% {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0; /* Bottom left square */
+  }
+  100% {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px; /* All corners rounded again */
+  }
 }
 
 nav .nav-list {
