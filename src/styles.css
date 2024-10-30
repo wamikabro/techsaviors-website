@@ -98,4 +98,12 @@ nav .nav-list li a {
 
 main section.hero-section {
   height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .hero-slogan {
+  font-size: 8rem;
+  color: var(--light-color);
 }
