@@ -12,3 +12,35 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+}
+
+header nav {
+  margin: 1rem 0;
+  background-color: black;
+  width: 50%;
+  border-radius: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-list {
+  list-style: none;
+  display: flex;
+  color: white;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+nav .nav-list li a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 20%;
+}
