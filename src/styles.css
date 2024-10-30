@@ -1,8 +1,12 @@
 :root {
   font-size: 62.5%;
   --dark-color: #112;
-  --primary-color-one: #223;
-  --light-color: #fff;
+  --primary-color-one: #111;
+  --primary-color-two: #4672fe;
+  --primary-color-three: #351c75;
+  --secondary-color-one: #e69138;
+  --secondary-color-two: #15151d;
+  --light-color: #e0e0e0;
 }
 
 body {
@@ -25,9 +29,8 @@ header {
 
 header nav {
   margin: 1rem 0;
-  background-color: var(--dark-color);
+  background-color: var(--primary-color-two);
   width: 50%;
-  border: solid 1px white;
   border-radius: 50px;
   height: 100%;
   display: flex;
@@ -84,6 +87,7 @@ nav .nav-list {
   justify-content: space-around;
   align-items: center;
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
 nav .nav-list li a {
