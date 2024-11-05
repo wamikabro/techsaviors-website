@@ -117,12 +117,14 @@ main section.hero-section {
   height: 210%;
   background-repeat: no-repeat;
   background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
 }
 
 .hero-section .hero-slogan {
   font-size: 8rem;
   color: var(--light-color);
-  margin-bottom: 6rem;
+  margin-top: 17rem;
+  margin-bottom: 12rem;
 }
 
 .hero-slogan span.container {
@@ -166,7 +168,8 @@ span.container #animated-text {
 main .hero-section div.hero-buttons-div {
   width: 100%;
   display: flex;
-  align-items: left;
+  align-items: center;
+  justify-content: center;
   margin: 7rem 0;
   gap: 3rem;
   padding: 0 5rem;
