@@ -176,6 +176,15 @@ div.hero-buttons-div .button {
   z-index: 0; /* Base z-index for the button */
 }
 
+div.hero-buttons-div .button:hover {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+div.hero-buttons-div .button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
 /* Before Pseudo-Element for Hover Effect */
 div.hero-buttons-div .button::before {
   content: "";
@@ -191,7 +200,7 @@ div.hero-buttons-div .button::before {
   clip-path: ellipse(100% 50% at 50% 100%); /* Creates a rounded wave shape */
 }
 
-/* Hover and Focus State */
+/* Button's Before in Button's Hover state*/
 div.hero-buttons-div .button:hover::before {
   top: 0; /* Slide to cover the button */
   transform: translateY(-60%); /* Slide the wave upwards */
