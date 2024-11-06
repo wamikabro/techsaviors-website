@@ -244,10 +244,16 @@ div.hero-buttons-div .button:hover a {
 section.services-section {
   display: flex;
   justify-content: space-around;
+  gap: 3rem; /* Adjust the value for desired spacing */
+  padding: 3rem 5rem;
+  flex-wrap: wrap;
 }
 
 .services-section .card {
-  width: 35rem;
+  flex-basis: 35rem;
+  min-width: 25rem;
+  flex-grow: 1;
+  flex-shrink: 1;
   height: 35rem;
   background-color: white;
 }
