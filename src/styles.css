@@ -241,7 +241,7 @@ div.hero-buttons-div .button:hover a {
 }
 
 /*Services Section*/
-section.services-section .cards {
+section.services-section div.cards {
   display: flex;
   justify-content: space-around;
   gap: 3rem; /* Adjust the value for desired spacing */
@@ -249,7 +249,7 @@ section.services-section .cards {
   flex-wrap: wrap;
 }
 
-.services-section .cards .card {
+.services-section div.cards .card {
   flex-basis: 30rem;
   max-width: 40rem;
   min-width: 20rem;
@@ -258,6 +258,46 @@ section.services-section .cards {
   height: 40rem;
   background-color: white;
   border-radius: 3%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*TODO: SEO, Logo Design, Branding, Management*/
+
+.card.card1 {
+  background-image: url("../images/video-editing.jpg");
+}
+.card.card2 {
+  background-image: url("../images/marketing.jpg");
+}
+.card.card3 {
+  background-image: url("../images/web-development.jpg");
+}
+
+.card.card4 {
+  background-image: url("../images/web-design.jpg");
+}
+
+.card.card5 {
+  background-image: url("../images/seo.jpg");
+}
+
+.card.card6 {
+  background-image: url("../images/branding.jpg");
+}
+
+.card.card7 {
+  background-image: url("../images/product-design.jpg");
+}
+
+.card.card8 {
+  background-image: url("../images/logo-design.jpg");
+}
+
+.card.card9 {
+  background-image: url("../images/social-media-management.jpg");
 }
 
 .services-section .heading-container {
