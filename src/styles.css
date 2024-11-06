@@ -241,7 +241,7 @@ div.hero-buttons-div .button:hover a {
 }
 
 /*Services Section*/
-section.services-section {
+section.services-section .cards {
   display: flex;
   justify-content: space-around;
   gap: 3rem; /* Adjust the value for desired spacing */
@@ -249,11 +249,22 @@ section.services-section {
   flex-wrap: wrap;
 }
 
-.services-section .card {
-  flex-basis: 35rem;
-  min-width: 25rem;
+.services-section .cards .card {
+  flex-basis: 30rem;
+  max-width: 40rem;
+  min-width: 20rem;
   flex-grow: 1;
   flex-shrink: 1;
-  height: 35rem;
+  height: 40rem;
   background-color: white;
+  border-radius: 3%;
+}
+
+.services-section .heading-container {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--light-color);
+}
+.services-section .heading-container .heading {
 }
