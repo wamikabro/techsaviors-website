@@ -11,7 +11,17 @@ navLinks.forEach((link) => {
 });
 
 // Array of text options to animate
-const textOptions = ["Web Design", "Development", "Video Editing", "Marketing"];
+const textOptions = [
+  "Web Design",
+  "Development",
+  "Video Editing",
+  "Marketing",
+  "SEO",
+  "Logo Design",
+  "Branding",
+  "Product Design",
+  "Management",
+];
 let currentIndex = 0;
 
 // Reference to the animated text element and container

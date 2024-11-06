@@ -111,7 +111,7 @@ main section.hero-section {
 
 .hero-section::before {
   content: "";
-  background-image: url("../images/thumb-1920-1345265.png");
+  background-image: url("../images/hero-background.png");
   position: absolute;
   top: -19rem;
   left: 0;
