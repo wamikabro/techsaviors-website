@@ -111,7 +111,7 @@ main section.hero-section {
 
 .hero-section::before {
   content: "";
-  background-image: url("../images/hero-background.png");
+  background-image: url("../images/hero-background.webp");
   position: absolute;
   top: -19rem;
   left: 0;
@@ -267,37 +267,37 @@ section.services-section div.cards {
 /*TODO: SEO, Logo Design, Branding, Management*/
 
 .card.card1 {
-  background-image: url("../images/video-editing.jpg");
+  background-image: url("../images/video-editing.webp");
 }
 .card.card2 {
-  background-image: url("../images/marketing.jpg");
+  background-image: url("../images/marketing.webp");
 }
 .card.card3 {
-  background-image: url("../images/web-development.jpg");
+  background-image: url("../images/web-development.webp");
 }
 
 .card.card4 {
-  background-image: url("../images/web-design.jpg");
+  background-image: url("../images/web-design.webp");
 }
 
 .card.card5 {
-  background-image: url("../images/seo.jpg");
+  background-image: url("../images/seo.webp");
 }
 
 .card.card6 {
-  background-image: url("../images/branding.jpg");
+  background-image: url("../images/branding.webp");
 }
 
 .card.card7 {
-  background-image: url("../images/product-design.jpg");
+  background-image: url("../images/product-design.webp");
 }
 
 .card.card8 {
-  background-image: url("../images/logo-design.jpg");
+  background-image: url("../images/logo-design.webp");
 }
 
 .card.card9 {
-  background-image: url("../images/social-media-management.jpg");
+  background-image: url("../images/social-media-management.webp");
 }
 
 .services-section .heading-container {
