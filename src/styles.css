@@ -124,7 +124,12 @@ main section.hero-section {
 }
 
 .hero-section .hero-slogan {
-  font-size: 7rem;
+  font-size: clamp(
+    4rem,
+    6vw,
+    8rem
+  ); /* min size: 4rem, scaling up with viewport width, max size: 8rem */
+
   color: var(--light-color);
   margin-top: 17rem;
   margin-bottom: 12rem;
