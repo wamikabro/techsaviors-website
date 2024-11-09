@@ -124,11 +124,10 @@ main section.hero-section {
 }
 
 .hero-section .hero-slogan {
-  font-size: 8rem;
+  font-size: 7rem;
   color: var(--light-color);
   margin-top: 17rem;
   margin-bottom: 12rem;
-  white-space: nowrap; /* Prevents line break */
 }
 
 .hero-slogan span.container {
