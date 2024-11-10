@@ -378,3 +378,9 @@ section.client-count-section div {
 
 seciton.client-count-section div button.contact-us {
 }
+
+/* Footer Section */
+section.footer {
+  background-color: var(--dark-color);
+  padding: 10rem 5rem;
+}
