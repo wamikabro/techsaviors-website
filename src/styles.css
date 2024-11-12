@@ -367,11 +367,10 @@ section.client-reviews-section div.reviews-container {
   background-color: var(--secondary-color-one-transparent);
   color: var(--secondary-color-one);
   padding: 0.5rem 1rem;
-  width: fit-content;
   border-radius: 50px;
   margin: 1rem 0;
   font-weight: 500;
-  white-space: nowrap;
+  display: inline-block;
 }
 .card-list .card-holder .client-image {
   width: 100%;
