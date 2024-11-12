@@ -6,6 +6,7 @@
   /*#4672fe  #69d6ac*/
   --primary-color-three: #351c75;
   --secondary-color-one: #69d6ac;
+  --secondary-color-one-transparent: rgba(105, 214, 172, 0.2);
   /*#e69138  #fc9e3e*/
 
   --secondary-color-two: #15151d;
@@ -269,39 +270,37 @@ section.services-section div.cards {
   background-repeat: no-repeat;
 }
 
-/*TODO: SEO, Logo Design, Branding, Management*/
-
-.card.card1 {
+.services-section .card.card1 {
   background-image: url("../images/video-editing.webp");
 }
-.card.card2 {
+.services-section .card.card2 {
   background-image: url("../images/marketing.webp");
 }
-.card.card3 {
+.services-section .card.card3 {
   background-image: url("../images/web-development.webp");
 }
 
-.card.card4 {
+.services-section .card.card4 {
   background-image: url("../images/web-design.webp");
 }
 
-.card.card5 {
+.services-section .card.card5 {
   background-image: url("../images/seo.webp");
 }
 
-.card.card6 {
+.services-section .card.card6 {
   background-image: url("../images/branding.webp");
 }
 
-.card.card7 {
+.services-section .card.card7 {
   background-image: url("../images/product-design.webp");
 }
 
-.card.card8 {
+.services-section .card.card8 {
   background-image: url("../images/logo-design.webp");
 }
 
-.card.card9 {
+.services-section .card.card9 {
   background-image: url("../images/social-media-management.webp");
 }
 
@@ -339,15 +338,53 @@ section.aim-section {
 section.client-reviews-section {
   padding: 10rem 5rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h2.client-reviews-heading {
   font-size: 4rem;
   color: var(--light-color);
+  margin-bottom: 10rem;
 }
 
 section.client-reviews-section div.reviews-container {
+}
+
+.card-list {
+  list-style: none;
+}
+
+.card-list .card-item .card-holder {
+  width: 400px;
+  display: block;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.card-holder .badge {
+  background-color: var(--secondary-color-one-transparent);
+  color: var(--secondary-color-one);
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  border-radius: 50px;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.card-list .card-holder .client-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+.client-name {
+  font-size: 2rem;
+  color: var(--dark-color);
 }
 
 /* Client Logos Section*/
