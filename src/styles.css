@@ -348,7 +348,8 @@ h2.client-reviews-heading {
   margin-bottom: 10rem;
 }
 
-section.client-reviews-section div.reviews-container {
+section.client-reviews-section {
+  background-color: var(--primary-color-two);
 }
 
 .card-list {
@@ -361,6 +362,8 @@ section.client-reviews-section div.reviews-container {
   background-color: white;
   padding: 1.5rem;
   border-radius: 1rem;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card-holder .badge {
@@ -396,7 +399,7 @@ section.client-logos-section {
 
 /* Client Count Section */
 section.client-count-section {
-  background-color: var(--primary-color-two);
+  background-color: var(--primary-color-three);
   padding: 10rem 5rem;
   display: flex;
   flex-direction: column;
