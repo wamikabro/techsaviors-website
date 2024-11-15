@@ -56,15 +56,12 @@ setInterval(updateText, 2000);
 
 new Swiper(".card-wrapper", {
   loop: true,
+  spaceBetween: 30,
 
-  // Show 3 cards at a time
-  slidesPerView: 3,
-  slidesPerGroup: 1, // Move one card at a time
-
-  // Pagination bullets
+  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
-    clickable: true, // Optional: if you want to click on pagination dots to change slides
+    clickable: true,
   },
 
   // Navigation arrows
@@ -73,6 +70,16 @@ new Swiper(".card-wrapper", {
     prevEl: ".swiper-button-prev",
   },
 
-  // Optional: Add space between the slides if needed
-  spaceBetween: 20, // Adjust space between the cards
+  // Responsive breakpoints
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 });
