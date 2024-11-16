@@ -383,6 +383,10 @@ section.container {
   border-radius: 1rem;
 }
 
+.client-image.image6 {
+  object-position: center;
+}
+
 .client-name {
   font-size: 2rem;
   color: var(--dark-color);
