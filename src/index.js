@@ -56,7 +56,6 @@ setInterval(updateText, 2000);
 
 new Swiper(".card-wrapper", {
   loop: true,
-  spaceBetween: 30,
 
   // If we need pagination
   pagination: {

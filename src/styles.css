@@ -345,7 +345,7 @@ section.container {
 
 .card-list .card-item .card-holder {
   user-select: none;
-  width: 380px;
+  width: auto;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -355,6 +355,7 @@ section.container {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   text-decoration-thickness: 0.2s ease;
   height: 500px;
+  margin: 0 2rem;
 }
 
 .card-list .card-item .card-holder:hover {
