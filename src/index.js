@@ -56,8 +56,12 @@ setInterval(updateText, 2000);
 
 new Swiper(".card-wrapper", {
   loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
 
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
