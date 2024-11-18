@@ -346,13 +346,15 @@ section.container {
 .card-list .card-item .card-holder {
   user-select: none;
   width: 380px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   padding: 1.5rem;
   border-radius: 1rem;
   border: 2px solid transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   text-decoration-thickness: 0.2s ease;
+  height: 500px;
 }
 
 .card-list .card-item .card-holder:hover {
@@ -371,6 +373,7 @@ section.container {
   margin: 1rem 0;
   font-weight: 500;
   display: inline-block;
+  align-self: flex-start; /* Prevent stretching in a flex container */
 }
 
 .client-image {
