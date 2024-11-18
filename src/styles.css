@@ -411,10 +411,16 @@ section.container {
 .client-logos-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: center;
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.client-logos-container p {
+  font-size: 2rem;
+  color: var(--dark-color);
 }
 
 .client-logo {
