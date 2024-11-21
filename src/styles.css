@@ -538,12 +538,81 @@ section.client-count-section {
   color: var(--light-color);
 }
 
-section.client-count-section div {
-  display: flex;
-  gap: 1rem;
+span.client-count {
+  background-color: var(--secondary-color-one);
+  display: inline-block;
+  line-height: 4.5rem;
+  border-radius: 5%;
+  color: var(--dark-color);
+  font-weight: 600;
 }
 
-seciton.client-count-section div button.contact-us {
+span.client-incremented-count {
+  background-color: var(--secondary-color-one);
+  display: inline-block;
+  line-height: 4.5rem;
+  border-radius: 5%;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.client-count-section button.contact-us {
+  padding: 1.5rem 4rem;
+  margin-top: 3rem;
+  border-radius: 10px;
+  background-color: var(--secondary-color-one);
+  cursor: pointer;
+  border: none;
+  flex-basis: 15rem; /* Sets an initial width */
+  flex-grow: 1; /* Allows buttons to grow to fill available space */
+  flex-shrink: 1; /* Allows buttons to shrink if space is limited */
+  min-width: 10rem; /* Sets a minimum width before wrapping */
+  max-width: 20rem;
+
+  position: relative; /* Necessary for positioning the pseudo-element */
+  overflow: hidden; /* Ensures the pseudo-element doesn’t overflow */
+  z-index: 0; /* Base z-index for the button */
+}
+
+.client-count-section button.contact-us a {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.client-count-section button.contact-us:hover {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.client-count-section button.contact-us:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Before Pseudo-Element for Hover Effect */
+.client-count-section button.contact-us::before {
+  content: "";
+  position: absolute;
+  top: -20%; /* Start from below the button */
+  left: 0;
+  width: 100%;
+  height: 250%;
+  background-color: var(--primary-color-two); /* Hover color */
+  transition: top 0.2s ease, transform 0.5s ease; /* Ensure transition is applied */
+  z-index: -1; /* Position behind <a> of button */
+  border-radius: inherit; /* Match the button's border radius */
+  clip-path: ellipse(100% 50% at 50% 100%); /* Creates a rounded wave shape */
+}
+
+/* Button's Before in Button's Hover state*/
+.client-count-section button.contact-us:hover::before {
+  top: 0; /* Slide to cover the button */
+  transform: translateY(-60%); /* Slide the wave upwards */
+}
+
+.client-count-section button.contact-us:hover a {
+  color: var(--light-color);
 }
 
 /* Footer Section */
