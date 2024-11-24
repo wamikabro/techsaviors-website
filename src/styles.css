@@ -250,7 +250,7 @@ div.hero-buttons-div .button:hover a {
 section.services-section div.cards {
   display: flex;
   justify-content: space-evenly;
-  row-gap: 5rem;
+  gap: 5rem;
   padding: 3rem 5rem;
   flex-wrap: wrap;
 }
