@@ -618,5 +618,17 @@ span.client-incremented-count {
 /* Footer Section */
 section.footer {
   background-color: var(--dark-color);
-  padding: 10rem 5rem;
+  padding: 5rem 5rem;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer div p {
+  display: inline;
+  color: var(--light-color);
 }
