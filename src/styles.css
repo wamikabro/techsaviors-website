@@ -257,10 +257,12 @@ section.services-section div.cards {
 
 /* General Card Enhancements */
 .services-section div.cards .card {
-  flex-basis: 30rem;
-  max-width: 40rem;
   min-width: 20rem;
+  flex-basis: 30rem;
+
   height: 40rem;
+  flex-grow: 1;
+  flex-shrink: 1;
   background-color: white;
   border-radius: 15px;
   background-size: cover;
