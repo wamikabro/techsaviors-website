@@ -45,6 +45,10 @@ header nav {
   animation: cornerChange 4s infinite; /* Adjust duration as needed */
 }
 
+nav .breadcrumb {
+  display: none;
+}
+
 @keyframes cornerChange {
   0% {
     border-top-left-radius: 50px;
@@ -639,6 +643,46 @@ section.footer {
 /*Extra Mobile Responsiveness */
 
 @media screen and (max-width: 768px) {
+  /* Navigation Bar */
+  header nav {
+    width: 100%;
+    animation: none;
+    height: 80vh;
+    padding: 2rem 0;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: -840%;
+    transition: top 0.5s ease;
+  }
+
+  .show {
+    top: -15%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4rem;
+  }
+
+  nav ul li {
+    font-size: 3rem;
+  }
+
+  nav .hamburger {
+    display: block;
+    color: var(--light-color);
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 0;
+  }
+
   /* Slogan */
   .client-logos-container {
     flex-direction: column;
