@@ -210,11 +210,12 @@ div.hero-buttons-div .button a {
   transition: color 0.5s ease; /* Smooth text color transition */
 }
 
-div.hero-buttons-div .button:hover {
+/*Generally for all buttons*/
+button:hover {
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
-div.hero-buttons-div .button:active {
+button:active {
   transform: translateY(-2px);
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 }
@@ -586,15 +587,6 @@ span.client-incremented-count {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.8rem;
-}
-
-.client-count-section button.contact-us:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-}
-
-.client-count-section button.contact-us:active {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 }
 
 /* Before Pseudo-Element for Hover Effect */
