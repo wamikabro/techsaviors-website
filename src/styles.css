@@ -712,6 +712,24 @@ section.footer {
     text-align: center;
   }
 
+  /*Aim section*/
+  section.aim-section {
+  }
+
+  .aim-text {
+    font-size: 3rem;
+  }
+
+  .aim-text-brand-name {
+    color: white;
+    background-color: var(--secondary-color-one);
+    display: block;
+    border-radius: 1rem;
+  }
+
+  /*Clients logo section*/
+
+  /*Footer*/
   section.footer div {
     text-align: center;
     flex-direction: column;
