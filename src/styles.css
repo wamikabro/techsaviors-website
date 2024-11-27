@@ -45,7 +45,7 @@ header nav {
   animation: cornerChange 4s infinite; /* Adjust duration as needed */
 }
 
-nav .breadcrumb {
+nav .hamburger {
   display: none;
 }
 
