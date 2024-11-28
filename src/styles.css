@@ -649,7 +649,7 @@ section.footer {
     flex-direction: column;
     justify-content: center;
     top: -840%;
-    transition: top 0.5s ease;
+    transition: top 0.5s ease-in-out;
   }
 
   .show {
@@ -668,11 +668,14 @@ section.footer {
   }
 
   nav .hamburger {
-    display: block;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     color: var(--light-color);
     font-size: 3.5rem;
     position: absolute;
-    bottom: 0;
+    bottom: -0.5rem;
   }
 
   /*Services Section*/
